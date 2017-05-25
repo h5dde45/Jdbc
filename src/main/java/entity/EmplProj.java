@@ -1,11 +1,11 @@
 package entity;
 
-public class ImplProj {
+public class EmplProj {
 
     private Long employeeId;
     private Long projectId;
 
-    public ImplProj() {
+    public EmplProj() {
     }
 
     public Long getEmployeeId() {
@@ -27,12 +27,12 @@ public class ImplProj {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof ImplProj)) return false;
+        if (!(o instanceof EmplProj)) return false;
 
-        ImplProj implProj = (ImplProj) o;
+        EmplProj emplProj = (EmplProj) o;
 
-        if (employeeId != null ? !employeeId.equals(implProj.employeeId) : implProj.employeeId != null) return false;
-        return projectId != null ? projectId.equals(implProj.projectId) : implProj.projectId == null;
+        if (employeeId != null ? !employeeId.equals(emplProj.employeeId) : emplProj.employeeId != null) return false;
+        return projectId != null ? projectId.equals(emplProj.projectId) : emplProj.projectId == null;
     }
 
     @Override
@@ -44,7 +44,7 @@ public class ImplProj {
 
     @Override
     public String toString() {
-        return "ImplProj{" +
+        return "EmplProj{" +
                 "employeeId=" + employeeId +
                 ", projectId=" + projectId +
                 '}';
